@@ -7,6 +7,7 @@ describe('Sign In page', () => {
   const invalidPassword = 'invalid';
 
   beforeEach(() => {
+    // Visit the login page before each test
     cy.visit('https://the-internet.herokuapp.com/login');
   });
 
