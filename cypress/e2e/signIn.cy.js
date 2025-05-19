@@ -30,7 +30,7 @@ describe('Sign In page', () => {
 
     // Assert validation errors are displayed
     // Try targeting a more specific container like .flash.error or similar
-    cy.get('.flash .error').should('be.visible');
+    cy.get('#flash').should('contain.text', 'Your username is invalid!');
   });
 
   it('Logout from the app', () => {
